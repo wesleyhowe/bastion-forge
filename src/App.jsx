@@ -616,50 +616,17 @@ function normalizeCampaignCode(code) {
 
 const PRESET_TEMPLATES = {
   starter_keep: {
-    bastionName: 'Watchtower of Oakhaven',
-    ownerName: 'Ser Rowan Vance',
+    bastionName: '',
+    ownerName: '',
     characterLevel: 5,
-    treasury: 850,
-    defenders: 8,
+    treasury: 0,
+    defenders: 0,
     turnCount: 1,
     dmOverride: false,
     campaignCode: '',
-    specialFacilities: [
-      {
-        uid: 'sp_1',
-        catalogId: 'barrack',
-        customName: 'Ironshield Barracks',
-        space: 'Roomy',
-        hirelingNotes: 'Sergeant Brenna & 2 squires',
-        damaged: false,
-        assignedOrder: 'Recruit',
-      },
-      {
-        uid: 'sp_2',
-        catalogId: 'smithy',
-        customName: 'The Ember Forge',
-        space: 'Roomy',
-        hirelingNotes: 'Master Torin & Apprentice Pip',
-        damaged: false,
-        assignedOrder: 'Craft',
-      },
-    ],
-    basicFacilities: [
-      { uid: 'bf_1', typeId: 'bedroom', customName: 'Commander’s Quarters', space: 'Cramped' },
-      { uid: 'bf_2', typeId: 'dining_room', customName: 'Mess Hall', space: 'Roomy' },
-      { uid: 'bf_3', typeId: 'courtyard', customName: 'Training Yard', space: 'Roomy' },
-      { uid: 'bf_4', typeId: 'storage', customName: 'Cellar Vault', space: 'Cramped' },
-    ],
-    chronicle: [
-      {
-        id: 'log_init_1',
-        turn: 1,
-        type: 'milestone',
-        title: 'Charter Granted at Level 5',
-        details: 'Watchtower of Oakhaven established with 2 Special Facilities (Ironshield Barracks, The Ember Forge) and 8 Bastion Defenders.',
-        timestamp: 'Day 1',
-      },
-    ],
+    specialFacilities: [],
+    basicFacilities: [],
+    chronicle: [],
   },
   adventurers_guildhall: {
     bastionName: 'The Gilded Griffin Lodge',
